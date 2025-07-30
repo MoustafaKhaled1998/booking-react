@@ -5,6 +5,7 @@ import { logout } from '../../store/userSlice'
 import { PrimaryButton, SecondaryButton } from '../shared/Button'
 import ServiceIcon from '../shared/ServiceIcon'
 import api from '../../utils/axios'
+import headerBg from '../../assets/images/Header BG.jpg'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -60,7 +61,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="border-b border-gray-200 navbar">
+      <nav className="border-b border-gray-200 navbar" style={{ backgroundImage: `url(${headerBg})` }}>
         <div className='w-11/12 ml-auto'> 
           <div className='flex justify-end p-4'>
             {!isAuthenticated && (

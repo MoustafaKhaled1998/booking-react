@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form'
 import { useDispatch, useSelector } from 'react-redux'
 import { setUser, setLoading, setError, setAuthToken } from '../../store/userSlice'
 import logo from '../../assets/images/BG.png'
+import vectorLogo from '../../assets/icons/Vector.svg'
 
 const SignUp = () => {
   const dispatch = useDispatch()
@@ -76,7 +77,7 @@ const SignUp = () => {
   return (
     <div className='flex'>
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 w-1/2">
-    <img src="src/assets/icons/Vector.svg" alt="logo" className='w-1/4 mx-auto' />
+    <img src={vectorLogo} alt="logo" className='w-1/4 mx-auto' />
 
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">

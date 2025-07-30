@@ -3,6 +3,8 @@ import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 import { useDispatch, useSelector } from 'react-redux'
 import { setUser, setLoading, setError, setAuthToken } from '../../store/userSlice'
+import vectorLogo from '../../assets/icons/Vector.svg'
+import bgImage from '../../assets/images/BG.png'
 
 const Login = () => {
   const dispatch = useDispatch()
@@ -47,7 +49,7 @@ const Login = () => {
     <div className='flex'>
       <div className="min-h-screen bg-gray-50 flex flex-col py-12 sm:px-6 lg:px-8 w-full">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
-          <img src="src/assets/icons/Vector.svg" alt="logo" className='w-1/2 mx-auto' />
+          <img src={vectorLogo} alt="logo" className='w-1/2 mx-auto' />
           <h2 className="mt-6 text-center text-3xl text-gray-900 font-bold">
             Log In
           </h2>
@@ -185,7 +187,7 @@ const Login = () => {
         </div>
       </div>
 
-      <img src="src/assets/images/BG.png" alt="logo" className='w-1/2' />
+      <img src={bgImage} alt="logo" className='w-1/2' />
     </div>
   )
 }
