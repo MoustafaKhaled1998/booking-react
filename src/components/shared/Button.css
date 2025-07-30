@@ -1,0 +1,19 @@
+.shared-btn {
+  @apply bg-blue-600 text-white px-4 py-2 hover:bg-blue-700 transition;
+}
+.primary-btn {
+  background-color: rgba(223, 20, 45, 1);
+  color: rgba(253, 241, 242, 1);
+  border: none;
+}
+.primary-btn:hover {
+  filter: brightness(0.95);
+}
+.secondary-btn {
+  background-color: rgba(223, 20, 45, 0.06);
+  color: rgba(223, 20, 45, 1);
+  border: none;
+}
+.secondary-btn:hover {
+  background-color: rgba(223, 20, 45, 0.12);
+}
